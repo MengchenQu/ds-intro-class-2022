@@ -34,7 +34,7 @@ def check_path(path):
     # if doesn't exist
     >>> False, []
     '''
-
+os.path.isdir('/Users/yue/Desktop/OneCareer/ds-class-intro/python_basics/class03')
     # code up your solution here
 
 
@@ -55,7 +55,9 @@ def read_csv(file):
     '''
 
     # code up your solution here
-
+file = open('class03.txt', 'r')
+print(file.read())
+file.close()
 
 
 def write_csv(data_list, output_file):
@@ -84,6 +86,9 @@ def write_csv(data_list, output_file):
 
     # code up your solution here
 
+file = open('class03.txt', 'w')
+file.write('here is another file')
+file.close()
 
 
 def read_json(file):
@@ -102,7 +107,10 @@ def read_json(file):
     '''
 
     # code up you solution here
-
+import json
+with open('some.json') as f:
+    js = json.load(f)
+print(js)
 
 
 if __name__=="__main__":
