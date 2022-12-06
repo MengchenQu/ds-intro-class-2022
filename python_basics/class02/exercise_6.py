@@ -21,7 +21,9 @@ def calculation(a, b):
 	sum: sum of two numbers
 	diff: difference of two numbers
 	'''
-
+    add = a + b
+    sub = a - b
+    print (add, sub)
 	# code up your solution here
 
 
